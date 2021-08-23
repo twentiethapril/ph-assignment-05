@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="w-5/6 mx-auto">
+    <main class="grid grid-cols-2 gap-20 mt-16">
+        <div>
+            <img src="images/mac.png" alt="iMac">
+        </div>
+        <div>
+            <div>
+                <h1 class="text-4xl font-semibold mb-3">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                <p class="mb-12">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+            </div>
+            <div class="mb-10">
+                <h2 class="font-bold mt-10 mb-1">Memory</h2>
+                <button id="memory1" class="border border-gray-400 rounded px-1 py-1 inline bg-gray-200 hover:bg-black hover:text-white">8GB unified memory</button>
+                <button id="memory2" class="border border-gray-400 rounded px-1 py-1 inline hover:bg-black hover:text-white">16GB unified memory</button>
+                <h2 class="font-bold mt-10 mb-1">Storage</h2>
+                <button id="storage1" class="border border-gray-400 rounded px-1 py-1 inline bg-gray-200 hover:bg-black hover:text-white">256GB SSD storage</button>
+                <button id="storage2" class="border border-gray-400 rounded px-1 py-1 inline hover:bg-black hover:text-white">512GB SSD storage</button>
+                <button id="storage3" class="border border-gray-400 rounded px-1 py-1 inline hover:bg-black hover:text-white">1TB SSD storage</button>
+                <h2 class="font-bold mt-10 mb-1">Choose your delivery option</h2>
+                <button id="delivery1" class="border border-gray-400 rounded px-1 py-1 inline bg-gray-200 hover:bg-black hover:text-white">Friday, Aug 25 Free Prime Delivery</button>
+                <button id="delivery2" class="border border-gray-400 rounded px-1 py-1 inline hover:bg-black hover:text-white">Friday, Aug 21 Delivery Charge $20</button>
+            </div>
+            <div>
+                <table class="font-bold">
+                    <tr class="border-b border-gray-300">
+                        <td class="py-2 px-1 pr-12">Best Price</td>
+                        <td>$<span id="price-fixed">1299</span></td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="py-2 px-1 pr-12">Extra Memory Cost</td>
+                        <td>$<span id="price-memory">0</span></td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="py-2 px-1 pr-12">Extra Storage Cost</td>
+                        <td>$<span id="price-storage">0</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-black">
+                        <td class="py-2 px-1 pr-12">Delivery Charge</td>
+                        <td>$<span id="price-delivery">0</span></td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="py-2 px-1 pr-12">Total Price</td>
+                        <td>$<span id="price-total">1299</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mt-5 mb-2 font-semibold">
+                <h1>Add Promo Code</h1>
+                <input id="promo-code" class="border border-gray-300 py-1 pl-2 pr-3 rounded" type="text">
+                <button id="promo-submit" class="bg-red-600 py-1 px-3 rounded text-white" type="submit">Apply</button>
+            </div>
+        </div>
+    </main>
+    <hr class="border border-gray-200 m-2">
+    <div class="m-4 text-center">
+        <h1 class="text-4xl font-semibold">Total: $<span id="price-final">1299</span></h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
